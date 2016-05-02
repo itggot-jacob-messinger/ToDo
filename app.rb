@@ -9,9 +9,7 @@ class App < Sinatra::Base
 	get '/group/:name' do |name|
 	    @group = group.first(name: name)
 	    unless @group
-	    status 418
+	    	status 418
+	    end
     end
-
-
-
 end
